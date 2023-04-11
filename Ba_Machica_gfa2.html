@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>CS Formative Assessment 2</title>
+<head>
+	
+
+</head>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+body {font-family:"Times New Roman", serif}
+h1,h2,h3,h4,h5,h6 {font-family:serif; letter-spacing:5px}
+</style>
+
+<body>
+<h1>calculator thing</h1>
+<p>put in numbers and click the buttons to get the answer you want</p>
+<div id="home" class="w3-content">
+<div class="w3-padding-top-48">
+<div class="w3-display-container">
+
+
+<div class="w3-display-bottomleft w3-padding-small w3-opacity w3-hide-small">
+
+<h2></h2>
+
+Number 1: <input type="text" id="num1"> Number 2: <input type="text" id="num2">
+<br><br>
+
+
+<button onclick="sum()">+</button>
+<button onclick="diff()">-</button>
+<button onclick="mul()">*</button>
+<button onclick="div()">/</button>
+<button onclick="mod()">%</button>
+
+<p id="disp"></p>
+
+<script>
+			function sum() {
+            var num1 = Number(document.getElementById("num1").value);
+            var num2 = Number(document.getElementById("num2").value);
+            sum=num1+num2;
+            document.getElementById("disp").innerHTML ="The sum of "+num1+" and "+num2+" is "+sum;
+         }
+</script>
+<script>
+      function diff() {
+            var num1 = Number(document.getElementById("num1").value);
+            var num2 = Number(document.getElementById("num2").value);
+            diff=num1-num2;
+            document.getElementById("disp").innerHTML ="The difference of "+num1+" and "+num2+" is "+diff;
+         }
+</script>
+<script>
+      function mul() {
+            var num1 = Number(document.getElementById("num1").value);
+            var num2 = Number(document.getElementById("num2").value);
+            mul=num1*num2;
+            document.getElementById("disp").innerHTML ="The product of "+num1+" and "+num2+" is "+mul;
+         }
+</script>
+<script>
+      function div() {
+            var num1 = Number(document.getElementById("num1").value);
+            var num2 = Number(document.getElementById("num2").value);
+            div=num1/num2;
+            document.getElementById("disp").innerHTML ="The quotient of "+num1+" and "+num2+" is "+div;
+         }
+</script>
+<script>
+      function mod() {
+            var num1 = Number(document.getElementById("num1").value);
+            var num2 = Number(document.getElementById("num2").value);
+            mod=num1%num2;
+            document.getElementById("disp").innerHTML ="The mod of "+num1+" and "+num2+" is "+mod;
+         }
+</script>
+
+
+
+
+
+</div>
+</div>
+
+</div>
+
+</body>
+</html> 

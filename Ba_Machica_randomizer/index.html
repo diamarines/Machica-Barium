@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>IRONMAN PHILIPPINES</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+body {font-family:"Times New Roman", serif}
+h1,h2,h3,h4,h5,h6 {font-family:serif; letter-spacing:5px}
+</style>
+<body>
+
+<!-- Navigation (Sits on top) -->
+<div class="w3-top w3-bar w3-white w3-padding w3-card w3-wide">
+<a href="#home" class="w3-bar-item w3-button">Iron Man 70.3 Davao Philippines</a>
+
+<!-- Right-sided navbar links. Hide them on small screens -->
+<div class="w3-right w3-hide-small">
+<a href="#races" class="w3-bar-item w3-button">Races</a>
+<a href="#live" class="w3-bar-item w3-button">Live</a>
+<a href="#training" class="w3-bar-item w3-button">Training</a>
+</div>
+</div>
+
+<!-- Start Content -->
+<div id="home" class="w3-content">
+
+<!-- Image in Display Container -->
+<div class="w3-padding-top-48">
+<div class="w3-display-container">
+<img src="img1.jpg" alt="ironman" style="width:100%">
+
+<div class="w3-display-bottomleft w3-padding-small w3-opacity w3-hide-small">
+
+<h2></h2>
+
+</div>
+<h2>A Fusion of Urban and Natural Worlds</h2>
+<p>Davao is one of 7,107 islands that make up the Philippine archipelago. The city is attracting tourists with its rich culture, abundant natural resources, forests, wildlife and the imposing presence of Mt. Apo, the tallest mountain in the country.</p>
+<p>2024 VinFast IRONMAN 70.3 World Championship Qualification Slots 
+The 2023 IRONMAN 70.3 Davao offers Age Group Qualifying slots to the 2024 VinFast IRONMAN 70.3 World Championship on 14 & 15 December 2024 in Taupō, New Zealand. </p>
+</div>
+<table>
+	<tr><td><img src="img2_1.jpg" alt="Swim" style="width:100%"></td>
+	<td><img src="img2_2.jpg" alt="Bike" style="width:100%"></td>
+	<td><img src="img2_3.jpg" alt="Run" style="width:100%"></td>
+	</tr>
+	<tr>
+		<td align="center" id=num1><script>let num1 =
+		document.getElementById("num1").innerHTML =
+		Math.floor(Math.random() * 20);
+		</script></td>
+		<td align="center" id=num2><script>let num2=
+		document.getElementById("num2").innerHTML =
+		Math.floor(Math.random() * 20);
+		</script></td>
+		<td align="center" id=num3><script>let num3=
+		document.getElementById("num3").innerHTML =
+		Math.floor(Math.random() * 20);
+		</script></td>
+	</tr>
+	
+</table>
+<table>
+	<tr>
+<td>Highest Number: </td><td id="high"><script>document.getElementById("high").innerHTML =num1</script></td>
+</tr>
+<tr>
+<td >Highest Name of Scorer: </td><td id="name"><script> 
+	var value = num1; document.write((value + 9).toString(36).toUpperCase());
+</script></td>
+</tr>
+<tr>
+<td id="time">The time the winner took to finish the race: </td><td>
+<script>
+function timeConvert(n) {
+var num = n;
+var hours = (num / 60);
+var rhours = Math.floor(hours);
+var minutes = (hours - rhours) * 60;
+var rminutes = Math.round(minutes);
+return num + " minutes = " + rhours + " hour(s) and " + rminutes + " minute(s).";
+}
+document.write(timeConvert(num2+num3));
+</script></td>
+</tr>
+</table>
+
+</div>
+
+</div>
+
+</body>
+</html> 
